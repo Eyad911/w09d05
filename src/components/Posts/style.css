@@ -1,0 +1,83 @@
+.mainDiv{
+    /* background-color: burlywood; */
+    
+}
+
+.newPostDiv{
+    margin-top: 20px;
+    text-align: center;
+    /* font-size: 5rem; */
+}
+
+.newPostDiv input {
+    font-size: 1.2rem;
+}
+
+.newPostDiv button {
+    font-size: 1.2rem;
+}
+.logoutDiv{
+    text-align: end;
+    
+}
+.logoutDiv button{
+    font-size: 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+}
+
+.liDesc{
+    font-size: 2rem;
+}
+.delete{
+    background-color: red;
+    color: white;
+    margin-left: 29%;
+    width: 30%;
+    height: 2.8em;
+    margin-bottom: 10px;
+} 
+ .list{
+    display: grid;
+    grid-template-columns: 23% 23% 23%;
+}
+
+    
+.list{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 30px
+}
+img{
+    margin-top: 10px;
+    width: 88%;
+    height: 25rem;
+    margin-bottom: 10px;
+}
+li{
+    display: inline;
+    /* display: grid; */
+}
+#btubdat{
+    width: 30%;
+    height: 2rem;
+}
+.edit{
+    background-color: rgb(167, 210, 226);
+    color: black    ;
+    /* margin-left: 2%; */
+    width: 30%;
+    height: 2.8em;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    font-size: 20px;
+}
+
+ul{
+ border: solid 1px;
+ border-radius: 20px;
+}

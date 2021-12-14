@@ -37,8 +37,8 @@ const Account = () => {
 
   return (
     <>
-      <div className="verifyAccountWrapper">
-        <div className="verifyAccountBox">
+      <div >
+        <div >
           <h1>Verify Your Account</h1>
           <ReactCodeInput fields={4} onComplete={(val) => setCode(val)} />
           <button onClick={verifyAccount}>Verify</button>

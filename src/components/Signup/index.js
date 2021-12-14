@@ -50,7 +50,7 @@ const Signup = () => {
       ) : (
         <main className="signupPanel">
           
-          <div className="signupPanel__half signupHalf--first">
+          <div className="loginDiv">
             <PasswordChecklist
               rules={[
                 "minLength",
@@ -71,11 +71,11 @@ const Signup = () => {
                 }
               }}
             />
-            <button id="loginButton" onClick={() => navigate("/login")}>
+            <button id="loginButton" className="btnBK" onClick={() => navigate("/login")}>
               or go to login
             </button>
           </div>
-          <div className="signupPanel__half signupHalf--second">
+          <div  className="signupDiv">
             <h2>Signup</h2>
             {message ? <div className="message">{message}</div> : ""}
             <form

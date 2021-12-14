@@ -14,7 +14,16 @@ main.signupPanel {
   box-shadow: 0 2px 5px -6px #697a79, 0 0 30px -50px #697a79;
   display: flex;
 }
+.loginDiv{
+  margin-left: 20px;
+  margin-top: 100px;
 
+}
+.signupDiv{
+  margin-left: 60px;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
 main.signupPanel .signupPanel__half {
   display: flex;
   flex-direction: column;
@@ -65,7 +74,7 @@ main.signupPanel form input {
   width: 200px;
   border-radius: 50px;
   padding: 1rem 0.75rem;
-  background: #f0f4f3;
+  background: #91b0c8;
   border: none;
   color: black;
   font-family: "Outfit", sans-serif;
@@ -79,13 +88,14 @@ main.signupPanel #signupSubmitButton,
 main.signupPanel #loginButton {
   background: none;
   border: 1px solid white;
-  color: white;
+  color: black;
   border-radius: 50px;
   padding: 0.85rem 2.75rem;
   margin: 2rem 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
+  background-color: rgb(76, 103, 114);
 }
 
 .signupPanel__half.signupHalf--first {

@@ -20,7 +20,7 @@ const Login = () => {
       token: state.Login.token,
     };
   });
-
+console.log(state);
   const login = async () => {
     setMessage("");
     try {
@@ -47,8 +47,8 @@ const Login = () => {
           console.log(err);
         } else {
           dispatch( Loginn({
-              role: user.result.role,
-              token: user.token,
+              role: user.data.result.role,
+              token: user.data.token,
             })
           );
           navigate("/");
@@ -61,18 +61,18 @@ const Login = () => {
     <div className="loginWrapper">
       {state.token ? (
         <>
-          <div className="centerWrapper">
-            <div className="homeTitle">
+          <div >
+            <div >
               <p>You already loggedin, you don't need to login</p>
             </div>
-            <div className="homeButtons">
+            <div>
               <button onClick={() => navigate("/home")}>home</button>
             </div>
           </div>
         </>
       ) : (
         <main className="panel">
-          <div className="panel__half half--first">
+          <div>
             <h2>Login</h2>
             {message ? <div className="message">{message}</div> : ""}
             <form
@@ -104,9 +104,9 @@ const Login = () => {
               Or Login with Google
             </button>
           </div>
-          <div className="panel__half half--second">
+          <div className="signUpDiv">
             <h2>Hello, friend!</h2>
-            <p>Enter your personal details and start your journey with us</p>
+            
             <button id="signupButton" onClick={() => navigate("/signup")}>
               Sign up
             </button>
